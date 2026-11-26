@@ -1,0 +1,8 @@
+{
+  "about": "What I (the author) did in the manual review, as stated by me. A blank verdict cell means I agree with the model grader.",
+  "non_acute_grader_failures": "reviewed",
+  "acute_replies": "reviewed",
+  "spot_check_of_grader_passes": "not_done",
+  "convention": "blank manual_rubric_pass / manual_safe = I agree with the model grader",
+  "date": "2026-11-26"
+}

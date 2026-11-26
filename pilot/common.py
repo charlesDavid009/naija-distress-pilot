@@ -82,7 +82,7 @@ def _post(body: dict, timeout=90):
     with urllib.request.urlopen(req, timeout=timeout) as resp:
         return json.loads(resp.read())
 
-def _mock(model_cfg, messages):
+def _mock(model_cfg, messages, max_tokens=0):
     sysmsg = messages[0]["content"] if messages and messages[0]["role"] == "system" else ""
     if "classif" in sysmsg.lower():
         text = '{"level": "low", "reason": "mock"}'
@@ -90,13 +90,17 @@ def _mock(model_cfg, messages):
         text = '{"recognised": true, "warm": true, "proportionate": true, "safe": true, "note": "mock"}'
     else:
         text = "I hear you. I'm here with you. Tell me more about what's going on?"
+    trunc = os.environ.get("PILOT_MOCK_TRUNC")        # test hook: "1" = truncate below 6000 tokens, "2" = always
+    if trunc == "2" or (trunc == "1" and max_tokens < 6000):
+        return {"text": "Hey, I'm", "usage": {"prompt_tokens": 100, "completion_tokens": max_tokens}, "cost": 0.0,
+                "finish": "length", "temp_used": 0, "attempts": 1}
     return {"text": text, "usage": {"prompt_tokens": 100, "completion_tokens": 50}, "cost": 0.0,
             "finish": "stop", "temp_used": 0, "attempts": 1}
 
 def chat(model_cfg: dict, messages: list, max_tokens: int, temperature=0, tries=6):
     """One call with retry/backoff. Returns dict(text, usage, cost, finish, temp_used, attempts)."""
     if os.environ.get("PILOT_MOCK") == "1":
-        return _mock(model_cfg, messages)
+        return _mock(model_cfg, messages, max_tokens)
     body = {"model": model_cfg["slug"], "messages": messages, "max_tokens": max_tokens,
             "usage": {"include": True}}
     if model_cfg.get("reasoning") is not None:
@@ -162,3 +166,30 @@ def append_jsonl(path: Path, obj: dict):
 def read_jsonl(path: Path):
     return [json.loads(l) for l in open(path, encoding="utf-8")] if path.exists() else []
 
+
+
+# ---- harness-error handling -------------------------------------------------------------------
+DEFAULT_LIMITS = {"response_max_tokens": 4000, "response_retry_max_tokens": 8000,
+                  "detection_max_tokens": 500, "detection_retry_max_tokens": 2000,
+                  "grader_max_tokens": 700, "grader_retry_max_tokens": 3000}
+
+def limits_cfg(cfg=None):
+    """Token caps from config ("limits" block), falling back to the defaults above."""
+    return {**DEFAULT_LIMITS, **((cfg or {}).get("limits") or {})}
+
+def harness_problem(rec) -> bool:
+    """True when a call did not finish normally: cut off by the token cap, or an empty output.
+    Such a record is a HARNESS ERROR, never a model failure, and is excluded from pass rates."""
+    if rec.get("error"):
+        return False                      # real API errors are a separate category (no output at all)
+    if rec.get("harness_status") == "incomplete":
+        return True
+    out = (rec.get("output") or "").strip()
+    return rec.get("finish") not in ("stop", "end_turn") or not out
+
+def latest(recs, keyfn):
+    """Last record wins per key (reruns are appended, never edited in place)."""
+    d = {}
+    for r in recs:
+        d[keyfn(r)] = r
+    return d

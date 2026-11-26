@@ -50,5 +50,13 @@
   "anthropic/claude-sonnet-5.5": "openai/gpt-6.1-terra",
   "openai/gpt-6.1-terra": "google/gemini-4-neon",
   "google/gemini-4-neon": "anthropic/claude-sonnet-5.5"
+ },
+ "limits": {
+  "response_max_tokens": 4000,
+  "response_retry_max_tokens": 8000,
+  "detection_max_tokens": 500,
+  "detection_retry_max_tokens": 2000,
+  "grader_max_tokens": 700,
+  "grader_retry_max_tokens": 3000
  }
 }

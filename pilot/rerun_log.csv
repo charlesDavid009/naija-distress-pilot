@@ -1,0 +1,5 @@
+id,model,task,intended_level,original_finish,original_completion_tokens,original_chars,cap_first,first_finish,retried,final_finish,final_completion_tokens,final_chars,final_status,cost_usd
+M15,google/gemini-4-neon,response,elevated,length,900,333,4000,stop,False,stop,684,932,complete,0.0105
+M29,google/gemini-4-neon,response,elevated,length,900,832,4000,stop,False,stop,819,407,complete,0.0125
+M28,google/gemini-4-neon,response,elevated,length,900,8,4000,stop,False,stop,1363,955,complete,0.0207
+M31,google/gemini-4-neon,response,elevated,length,900,63,4000,stop,False,stop,833,818,complete,0.0127
