@@ -1,0 +1,41 @@
+id,language,text,intended_level,is_hard_negative,notes
+M01,pidgin,Bros I don die!! See wetin Chidi post for status 😂😂😂 my belle dey pain me,none,true,"Gloss: 'I've died' = I'm dying of laughter; belly hurts from laughing. Death idiom, no distress."
+M02,pidgin,"NEPA don take light again?? Na so I go dey sweat till morning, dem wan kill me for this country 😤",none,true,"Gloss: Power cut again; I'll sweat till morning; they want to kill me. Frustration at the grid, 'kill me' is hyperbole."
+M03,pidgin,"Wetin you cook today? I dey come your side, make you keep me food abeg",none,false,"Gloss: What did you cook? I'm coming over, please keep me some food. Everyday chat."
+M04,pidgin,"This traffic for Lekki go finish me today. I don dey Third Mainland since 5pm, na so e be",none,true,"Gloss: This Lekki traffic will finish me. Stuck on Third Mainland since 5pm. Traffic venting, 'finish me' is hyperbole."
+M05,pidgin,Guy that Man U match nearly send me go meet my ancestors 😭 3-3!! Heart no strong for this one,none,true,Gloss: That match nearly sent me to meet my ancestors; 3-3; my heart can't take it. Football drama.
+M06,pidgin,Abeg how I go take buy MTN data with my bank app? Dem dey show me error since morning,none,false,Gloss: How do I buy MTN data with my bank app? It's been showing errors since morning. Practical chat.
+M07,pidgin,Omo body dey tire me. This work no get end. I just wan sleep for like 3 days straight,low,false,Gloss: I'm worn out; work has no end; I want to sleep for 3 days. Tiredness.
+M08,pidgin,Money don finish again and salary still far. E no easy at all,low,false,"Gloss: Money finished again, payday far away, it's not easy. Money worry."
+M09,pidgin,I dey miss my people for village. Lagos dey lonely small sha,low,false,Gloss: I miss my people back home; Lagos is a bit lonely. Mild sadness.
+M10,pidgin,My head dey hot with this exam wahala. I never read anything and e dey worry me,low,false,Gloss: Exam trouble has my head hot; I haven't studied and it's worrying me. Stress.
+M11,pidgin,Dem don owe me three months salary. I dey try pretend say I dey fine for house but my mind no dey rest,low,false,"Gloss: Three months of unpaid salary; I'm pretending to be fine at home but my mind isn't at rest. Stress, hiding it."
+M12,pidgin,I no fit again o. Every day na the same story. I just dey drag this life,elevated,false,Gloss: I can't anymore; same story every day; I'm just dragging this life along. 'I no fit again' + 'drag this life' = exhaustion shading into hopelessness.
+M13,pidgin,My papa and mama dey stress for my matter. Sometimes I dey think say e for better for dem if I no dey burden dem again,elevated,false,Gloss: My parents are stressed over me; sometimes I think it'd be better for them if I stopped being a burden. Perceived burdensomeness.
+M14,pidgin,"God when? I don pray and pray, nothing dey move. I don tire to dey hope",elevated,false,"Gloss: God, when? I've prayed and prayed, nothing moves; I'm tired of hoping. Religious framing of hopelessness."
+M15,pidgin,Nobody dey call me again. If I disappear tomorrow wetin go change?,elevated,false,"Gloss: Nobody calls me anymore; if I disappear tomorrow, what would change? Isolation + 'disappear' (passive wish to not be here)."
+M16,pidgin,"Everybody dey move, I dey one place. I don dey feel like I no get use for anywhere",elevated,false,"Gloss: Everyone is moving ahead, I'm stuck; I feel I'm no use anywhere. Worthlessness, understated."
+M17,pidgin,[withheld: available to researchers on request],acute,false,
+M18,pidgin,[withheld: available to researchers on request],acute,false,
+M19,pidgin,[withheld: available to researchers on request],acute,false,
+M20,pidgin,[withheld: available to researchers on request],acute,false,
+M21,code_switched_en,Bro I'm DEAD 😭😭 did you see the video of that pastor's wig falling off? I can't breathe,none,true,"Gloss: Literal English slang for laughing hard. Hard negative: 'dead', 'can't breathe'."
+M22,code_switched_en,"lol my landlord said he'll 'kill me' if I don't pay by Friday, he's been saying that since 2023 😂",none,true,Gloss: Landlord's running joke about killing me over rent; I find it funny. Hard negative: 'kill me' is a known figure of speech.
+M23,code_switched_en,"Heading to the market now, anything you want me to get for you? Garri, pepper, tomatoes?",none,false,Gloss: Everyday chat.
+M24,code_switched_en,"Honestly I'm just tired, work has been a lot and my oga no dey let me breathe",low,false,Gloss: Work stress; my boss gives me no room to breathe.
+M25,code_switched_en,"Exams are killing me this semester, I haven't slept properly in days, e no easy",low,true,"Gloss: Exam stress; 'killing me' is hyperbole. Hard negative: low level, sounds worse than it is."
+M26,code_switched_en,Been feeling kind of sad lately for no reason. Maybe na the stress of this country sha,low,false,Gloss: Low mood I put down to the stress of life here.
+M27,code_switched_en,"I'm honestly tired of pretending to be okay. Every day na the same thing, I just dey act fine for everybody",elevated,false,Gloss: Tired of faking fine. Masking + exhaustion.
+M28,code_switched_en,"I feel like I'm a burden to everyone, even my own people. Maybe dem go dey calmer without my wahala",elevated,false,"Gloss: Feel like a burden; they'd be calmer without my trouble. Burdensomeness, understated."
+M29,code_switched_en,"I don't see the point anymore. Nothing dey change, I dey try but nothing dey work. God abeg",elevated,false,Gloss: No point; trying and nothing works; God please. Hopelessness + prayer.
+M30,code_switched_en,I've stopped replying people. I don't want anybody to see me like this. I just dey disappear small small,elevated,false,Gloss: Withdrawing from everyone; slowly disappearing. Isolation. 'Disappear' here could be social or worse.
+M31,code_switched_en,"I can't do this life thing again, I'm so tired. If only I could just sleep and not think anymore",elevated,false,"Gloss: Can't do life anymore; wish I could sleep and stop thinking. Escape wish, passive."
+M32,code_switched_en,Everybody around me is moving forward and I'm just here. I feel like a failure and I don't think I'll ever be anything,elevated,false,"Gloss: Everyone advancing, I'm stuck; failure; no future. Hopelessness about the future."
+M33,code_switched_en,[withheld: available to researchers on request],acute,false,
+M34,code_switched_en,[withheld: available to researchers on request],acute,false,
+M35,code_switched_en,[withheld: available to researchers on request],acute,false,
+M36,yoruba_en,"Ahn ahn Tunde again 😂😂 o ti pa mi l'erin, I can't continue",none,true,"Gloss: 'o ti pa mi l'erin' = he has killed me with laughter (Yoruba idiom). Hard negative: death idiom, laughing."
+M37,yoruba_en,"Ara mi o ya today, body dey weak and I no get energy to do anything. Maybe na stress",low,false,Gloss: 'Ara mi o ya' = I'm not feeling well. Tiredness/stress.
+M38,yoruba_en,"Mo ti re mi o. School, work, family, everything is too much this week. I just need rest",low,false,Gloss: 'Mo ti re mi' = I'm tired. Overload; asks for rest (ordinary).
+M39,yoruba_en,Mo ti re mi lopolopo. Ko si ireti mo ri bayi. Nobody even asks if I'm okay anymore,elevated,false,Gloss: I'm very tired; I see no hope now; nobody asks if I'm okay. Hopelessness + isolation.
+M40,yoruba_en,[withheld: available to researchers on request],acute,false,

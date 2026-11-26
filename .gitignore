@@ -1,0 +1,21 @@
+# --- Privacy rule: acute-level data and anything derived from it stays local ------------------
+pilot/local/
+**/local/
+*acute*
+*ACUTE*
+
+# --- Secrets and local configuration ---------------------------------------------------------
+.env
+.env.*
+*.env
+*.key
+*secret*
+pilot/config.json
+
+# --- Python / OS / editors ------------------------------------------------------------------
+__pycache__/
+*.pyc
+.venv/
+.DS_Store
+.idea/
+.vscode/

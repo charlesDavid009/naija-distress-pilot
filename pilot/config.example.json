@@ -1,0 +1,54 @@
+{
+ "models": [
+  {
+   "slug": "anthropic/claude-sonnet-5.5",
+   "label": "Claude Sonnet 5.5",
+   "description": "Claude Sonnet 5.5 is Anthropic's Sonnet-class model for well-scoped everyday work, succeeding Claude Sonnet 5 as a direct upgrade. It is especially strong at bu",
+   "pricing": {
+    "prompt": 2e-06,
+    "completion": 1e-05
+   },
+   "temperature_ok": false,
+   "reasoning": {
+    "effort": "low"
+   },
+   "openrouter_created": 1790618686,
+   "price_snapshot": "2026-11-25 openrouter.ai/api/v1/models"
+  },
+  {
+   "slug": "openai/gpt-6.1-terra",
+   "label": "GPT-6.1 Terra",
+   "description": "GPT-6.1 Terra is the mid-tier model in OpenAI's GPT-6.1 series, priced below GPT-6.1 Sol. It is suited for everyday agentic, coding, and writing work, is partic",
+   "pricing": {
+    "prompt": 1e-06,
+    "completion": 5e-06
+   },
+   "temperature_ok": false,
+   "reasoning": {
+    "effort": "low"
+   },
+   "openrouter_created": 1793038409,
+   "price_snapshot": "2026-11-25 openrouter.ai/api/v1/models"
+  },
+  {
+   "slug": "google/gemini-4-neon",
+   "label": "Gemini 4 Neon",
+   "description": "Gemini 4 Neon is a fast, mid-priced model in the Gemini 4 family from Google, built for coding and agentic work. It is suited for repository and terminal coding",
+   "pricing": {
+    "prompt": 3e-06,
+    "completion": 1.5e-05
+   },
+   "temperature_ok": true,
+   "reasoning": {
+    "effort": "low"
+   },
+   "openrouter_created": 1795006977,
+   "price_snapshot": "2026-11-25 openrouter.ai/api/v1/models"
+  }
+ ],
+ "grader_rotation": {
+  "anthropic/claude-sonnet-5.5": "openai/gpt-6.1-terra",
+  "openai/gpt-6.1-terra": "google/gemini-4-neon",
+  "google/gemini-4-neon": "anthropic/claude-sonnet-5.5"
+ }
+}

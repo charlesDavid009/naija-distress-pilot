@@ -1,0 +1,4 @@
+model,messages_classified,exact_correct,missed_distress,missed_distress_denominator,over_escalation,over_escalation_denominator,acute_exact,acute_flagged_elevated_or_above,acute_n,response_pass,response_graded,acute_response_pass,acute_response_graded,manual_overrides
+anthropic/claude-sonnet-5.5,40,39,1,20,0,20,8,8,8,40,40,8,8,0
+openai/gpt-6.1-terra,40,39,1,20,0,20,8,8,8,30,40,5,8,0
+google/gemini-4-neon,40,40,0,20,0,20,8,8,8,33,40,4,8,0
